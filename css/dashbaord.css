@@ -1,0 +1,318 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: white !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a.cstm-red-btn {
+    font-size: 15px;
+    color: white;
+    background-color: #b51f2b;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+a.cstm-gray-btn {
+    font-size: 15px;
+    color: white;
+    background-color: gray;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+/* --------------------------------------- */
+/* body */
+
+/* side-menu-styling */
+.dashboard {
+    display: flex;
+}
+
+.dashboard .side-menu {
+    width: 245px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #b51f2b;
+}
+
+.dashboard .side-menu .logo {
+    background-color: white;
+    padding: 8px;
+}
+
+/* scrollbar-style */
+.dashboard .side-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dashboard .side-menu::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.dashboard .side-menu::-webkit-scrollbar-thumb {
+    background-color: #c03f54;
+    border-radius: 10px;
+}
+
+.dashboard .side-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #c03f54;
+}
+
+.dashboard .main-content {
+    width: calc(100% - 245px);
+    position: fixed;
+    right: 0;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.dashboard .side-menu .logo img {
+    width: 160px;
+    height: auto;
+    object-position: center;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.dashboard .side-menu .menu-inner {
+    padding: 20px;
+}
+
+.dashboard .side-menu .menu-inner p {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.dashboard .side-menu .menu-inner ul {
+    list-style: none;
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+
+.dashboard .side-menu .menu-inner li {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.dashboard .side-menu .menu-inner i {
+    color: white;
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.dashboard .side-menu .menu-inner a {
+    color: #d5d5d5;
+    font-weight: 400;
+}
+
+.dashboard .side-menu .menu-inner a.active {
+    color: white;
+}
+
+/* right-main-styling */
+.dashboard .top-bar {
+    background-color: white;
+    padding: 13px 20px 13px 30px;
+    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+    position: fixed;
+    width: 82%;
+    z-index: 5;
+}
+
+.dashboard .top-bar .profile-logo {
+    float: right;
+}
+
+.dashboard .profile-logo .profile-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+
+.dashboard .profile-logo .profile-title {
+    padding-top: 3px;
+}
+
+.dashboard .profile-logo .profile-title h6 {
+    font-size: 15px;
+}
+
+.dashboard .profile-logo .profile-title p {
+    font-size: 13px;
+    color: gray;
+}
+
+/* page-content */
+.dashboard .page-content {
+    margin: 68px 0 30px 0;
+    padding-top: 20px;
+    position: relative;
+    background-color: rgb(116 120 123 / 7%);
+}
+
+.dashboard .page-content .cstm-inner {
+    margin: 30px 25px 0 25px;
+}
+
+/* .dashboard .page-content .child-head {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ebebeb;
+    padding: 0 20px;
+}
+
+.dashboard .page-content .child-head h3 {
+    font-size: 20px;
+    color: #0e0e0e;
+    padding-top: 7px;
+}
+
+.dashboard .page-content .child-head a {
+    font-size: 15px;
+    color: white;
+    background-color: #b51f2b;
+    padding: 8px 20px;
+    border-radius: 3px;
+} */
+
+.dashboard .top-bar .child-head {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    background: #ebebeb;
+    padding: 0 20px;
+}
+
+.dashboard .top-bar .child-head h3 {
+    font-size: 20px;
+    color: #0e0e0e;
+    padding: 8px 0;
+}
+
+.dashboard .page-content .cstm-search-bars {
+    margin-top: 30px;
+    float: right;
+    width: 30%;
+    position: relative;
+}
+
+.dashboard .cstm-search-bars input {
+    width: 100%;
+    padding: 5px 40px 5px 10px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+}
+
+.dashboard .cstm-search-bars i {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    color: #c8c9c8;
+    font-size: 14px;
+}
+
+.dashboard .cstm-search-bars input::placeholder {
+    font-size: 15px;
+}
+
+.dashboard .cstm-search-bars input:focus-visible {
+    outline: none;
+}
+
+.dashboard .page-content .cstm-table {
+    margin-top: 20px;
+}
+
+.dashboard .page-content .cstm-table.card {
+    border-radius: 5px;
+    border: 0;
+    box-shadow: rgb(0, 0, 0, 0%) 0px 2px 4px, rgba(0, 0, 0, .1) 0px 2px 6px;
+    margin-bottom: 20px;
+}
+
+.dashboard .page-content .cstm-table table th {
+    font-weight: 400;
+    font-size: 14px;
+    border-style: none;
+    background-color: #b51f2b;
+    color: white;
+    text-wrap: nowrap;
+}
+
+.dashboard .page-content .cstm-table table tr {
+    font-size: 14px;
+}
+
+.dashboard .page-content .cstm-table table tr td i {
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #727274;
+}
+
+.dashboard .page-content .cstm-table table tr td {
+    border-style: none;
+    /* text-wrap: nowrap; */
+}
+
+.dashboard .page-content .cstm-table table tr th:last-child {
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.dashboard .page-content .cstm-table table tr td:last-child {
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.dashboard .page-content .builder-form {
+    margin-top: 40px;
+}
+
+.dashboard .page-content .builder-form.card {
+    border-radius: 5px;
+    border: 0;
+    box-shadow: rgb(0, 0, 0, 0%) 0px 2px 4px, rgba(0, 0, 0, .1) 0px 2px 6px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.dashboard .page-content .loan-form {
+    margin-top: 40px;
+}
+
+.dashboard .page-content .loan-form.card {
+    border-radius: 5px;
+    border: 0;
+    box-shadow: rgb(0, 0, 0, 0%) 0px 2px 4px, rgba(0, 0, 0, .1) 0px 2px 6px;
+    padding: 25px;
+}
